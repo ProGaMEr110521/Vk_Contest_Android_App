@@ -59,12 +59,11 @@
         android:layout_marginBottom="32dp"
         android:clickable="true"
         android:contentDescription="@string/floatingActionButton"
+        android:onClick="onCallButtonClick"
         app:backgroundTint="#E64646"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/call_end"
-        android:onClick="@onCallButtonClick"
-        />
+        app:srcCompat="@drawable/call_end" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -90,6 +89,7 @@
         android:backgroundTint="#00FFFFFF"
         android:clickable="true"
         android:contentDescription="@string/floatingActionButton"
+        android:onClick="OpenCalls"
         android:scaleType="centerInside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -120,9 +120,20 @@
         android:backgroundTint="#00FFFFFF"
         android:clickable="true"
         android:contentDescription="@string/floatingActionButton"
+        android:onClick="OpenSendings"
         android:scaleType="centerInside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/chat_bubble"
         app:tint="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="530dp"
+        android:layout_marginBottom="116dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"></LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
