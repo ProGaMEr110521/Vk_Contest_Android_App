@@ -145,6 +145,7 @@
             android:layout_height="250dp"
             android:adjustViewBounds="false"
             android:background="@drawable/gradient_vlad"
+            android:contentDescription="@string/floatingActionButton"
             android:cropToPadding="false"
             android:padding="75dp"
             android:scaleType="centerInside"
@@ -155,6 +156,7 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:background="@drawable/gradient_dima"
+            android:contentDescription="@string/floatingActionButton"
             android:padding="75dp"
             android:scaleType="centerInside"
             tools:srcCompat="@drawable/dima" />
