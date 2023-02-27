@@ -9,19 +9,18 @@
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="62dp"
-        android:layout_height="57dp"
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginBottom="32dp"
         android:clickable="true"
         android:contentDescription="@string/floatingActionButton"
+        android:scaleType="center"
         app:backgroundTint="#FFFFFF"
-        app:fabSize="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/videocam_active"
-        app:useCompatPadding="false" />
+        app:srcCompat="@drawable/videocam_active" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton2"
@@ -46,7 +45,8 @@
         android:clickable="true"
         android:contentDescription="@string/floatingActionButton"
         android:onClick="showDialogHand"
-        app:backgroundTint="#296DB1"
+        android:tint="#FFFFFF"
+        app:backgroundTint="#4A4A4A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/waving_hand" />
@@ -128,10 +128,10 @@
         app:tint="#FFFFFF" />
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="376dp"
+        android:layout_height="540dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
         android:layout_marginBottom="116dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -140,9 +140,10 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/vlad_icon"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="267dp"
+            android:layout_marginBottom="5dp"
             android:adjustViewBounds="false"
             android:background="@drawable/gradient_vlad"
             android:contentDescription="@string/floatingActionButton"
@@ -152,14 +153,16 @@
             app:srcCompat="@drawable/vlad" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/dima_icon"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="267dp"
+            android:adjustViewBounds="false"
             android:background="@drawable/gradient_dima"
             android:contentDescription="@string/floatingActionButton"
+            android:cropToPadding="false"
             android:padding="75dp"
             android:scaleType="centerInside"
-            tools:srcCompat="@drawable/dima" />
+            app:srcCompat="@drawable/dima" />
 
     </LinearLayout>
 
