@@ -128,12 +128,37 @@
         app:tint="#FFFFFF" />
 
     <LinearLayout
-        android:layout_width="376dp"
-        android:layout_height="530dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="116dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent"></LinearLayout>
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:adjustViewBounds="false"
+            android:background="@drawable/gradient_vlad"
+            android:cropToPadding="false"
+            android:padding="75dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/vlad" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/gradient_dima"
+            android:padding="75dp"
+            android:scaleType="centerInside"
+            tools:srcCompat="@drawable/dima" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity{
 
     public void showDialogHand(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-
         builder.setTitle("Приветик :3")
                 .setMessage("Привет сладенький хихихи")
                 .setCancelable(true)
