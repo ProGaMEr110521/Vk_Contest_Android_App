@@ -56,6 +56,7 @@
         android:layout_marginBottom="32dp"
         android:clickable="true"
         android:contentDescription="@string/floatingActionButton"
+        android:onClick="ImageButtonChange2"
         android:scaleType="center"
         app:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -70,11 +71,12 @@
         android:layout_marginBottom="32dp"
         android:clickable="true"
         android:contentDescription="@string/floatingActionButton"
+        android:onClick="ImageButtonChange1"
         android:scaleType="center"
+        android:src="@drawable/microphone_active"
         app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/microphone_active" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton3"
@@ -114,6 +116,7 @@
         android:background="#00FFFFFF"
         android:clickable="true"
         android:contentDescription="@string/floatingActionButton"
+        android:onClick="ShowInProgress"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -145,6 +148,7 @@
         android:backgroundTint="#00FFFFFF"
         android:clickable="true"
         android:contentDescription="@string/floatingActionButton"
+        android:onClick="ShowInProgress"
         android:scaleType="centerInside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -169,12 +173,26 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="330dp"
+        android:layout_width="25dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="350dp"
         android:layout_marginBottom="394dp"
         android:adjustViewBounds="false"
         android:clickable="false"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/microphone_active" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="25dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginBottom="123dp"
+        android:adjustViewBounds="false"
+        android:clickable="false"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/microphone_active" />
@@ -184,8 +202,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="394dp"
-        android:gravity="center"
         android:text="Vladislav Progamer"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
